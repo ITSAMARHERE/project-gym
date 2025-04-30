@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falcon fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: "Exo 2", sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url("gym.jpg");
+        background-size: 1658px 1263px;
+        color: white;
+
+    }
+
+    .left {
+        display: inline;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+
+    }
+
+    .left img {
+        width: 98px;
+        background-color: white;
+
+    }
+    
+    .left div {
+        line-height: 65px;
+        font-size: 24px;
+        text-align: center;
+        margin:-23px;
+    }
+
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+        position: sticky;
+        top: 3px;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline;
+        /* border: 2px solid yellow; */
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 24px 12px;
+    }
+
+    .navbar li a:hover, .navbar li a:active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        font-family: "Exo 2", sans-serif;
+        margin: 0px 9px;
+        background-color: maroon;
+        color: white;
+        padding: 8px 14px;
+        border: 2px solid rgb(75, 72, 72);
+        border: radius 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(34, 33, 33);
+    }
+
+    .container {
+        border: 2px solid rgb(235, 237, 235);
+        margin: 140px 9px;
+        padding: 64px 12px;
+        width: 33%;
+        border-radius: 63px;
+        position:absolute;
+        left: 35%;
+        backdrop-filter:blur(5px);
+        box-shadow: 5px 5px 50px brown;
+    } 
+
+    .form-group input {
+        font-family: "Exo 2", sans-serif;
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+display: block;
+width: 100px;
+margin: 40px auto;
+padding: 5px;
+border-radius: 10px;
+    }
+    .containerbutton:hover{
+background-color: gray;
+    }
+
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="gym logo.webp" alt="Falcon fitness">
+            <div>Falcon Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Become a Member</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Kolkata Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+                <input type="text" name="" placeholder="Enter your Age">
+                <input type="text" name="" placeholder="Enter your Number">
+                <input type="text" name="" placeholder="Enter your Email id">
+            </div>
+            <button class="btn">SUMBIT</button>
+        </form>
+    </div>
+</body>
+
+</html>
